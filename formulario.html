@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+
+<body>
+    
+    <form action="" method="post">  <!--El metod post envia los datos de manera encriptada-->
+        <input type="text" name="" id="">
+        <br>
+        <input type="number" min="2" max="10"><!--max y min es la cantidad de caracteres-->
+        <br>
+        <input type="email" placeholder="CORREO@MAIL.COM">
+        <br>
+        <input type="submit" value="enviar">
+        <br>
+        <input type="range" min="5" max="10">
+        <br>
+        <input type="password" placeholder="contraseña">
+        <br>
+        <input type="color" name="color">
+    </form>
+    <hr>
+
+
+    <form>
+        <input type="text" placeholder="Nombre: " maxlength="20" id="nombre" required>
+        <br>
+        <input type="email" placeholder="Email@mail.com" >
+        <br>
+        <textarea name="mensaje" id="msje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+        <br>
+        <label for="País">País</label>
+        <select name="País" id="País">
+            <option value="">---</option>
+            <option value="México">México</option>
+            <option value="España">España</option>
+            <option value="Francia">Francia</option>
+            <option value="Alemania">Alemania</option>
+        </select>
+        <br>
+            <input type="radio" name="gen" value="h" id="h"><label>HOMBRE</label>
+            <input type="radio" name="gen" value="M" id="M"><label>MUJER</label>
+        <br>
+        <input type="checkbox" name="terminos" id="terminos" ><label>Terminos y Condiciones</label>
+        <input type="checkbox" name="publicidad" id="publicidad" ><label>Activar publicidad por correo</label>
+
+        <br>
+
+        <input type="submit" value="enviar">
+
+
+        <!--implementar un formulario consiste en varios pasos
+        1.-Escribir la interface del usuario
+        2.-Implementar el procesamiento del lado del servidor.
+        3.-Configurar la interface del usuario para comunicarse con el servidor.
+        4.-El metod post envia los datos en publico y el metod Get en modo Público.
+        
+        -->
+    </form>
+</body>
+</html>

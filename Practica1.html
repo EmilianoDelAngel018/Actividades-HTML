@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICA 1</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Ejemplo de Applet con Java</h1>
+    <p>
+        Un <b>applet</b> conforme a lo encontramos en las paginas de Orcle: 
+        "es una aplicación hecha en Java que se llama desde un documento <i>HTML</i>
+        y se ejecuta dentro de un <inserted>navegador.</inserted>" Es necesario recordar que el 
+        navegador debe tener instalado el plugin de la Máquina Virtual de Java (JVM).
+    </p>
+    <p>
+        <i>Máquina Virtual de Java: </i>Es el programa que se encarga de ejecutar el bytecode generado 
+        por el compilador Java.
+    </p>
+    <p>
+        Para entender la forma en que se manejan los <b>applet</b> vamos a ver un ejemplo que presenta el clásico Hola Mundo.
+    </p>
+    <center>
+    <img src="./code.png">
+</center>
+    <p>
+        Como puede obserrvarse en la unica variable que utiliza este applet es <i>g</i> que representa un objeto de la clase <i>Graphics</i> 
+        sobre el cual vamos a dibujar la cadena de texto que resulta de ejecutar applet.
+    </p>
+    <p>
+        Para ejecutarlo es neceario mandarlo llamar desde una página HTML utilizando la etiqueta <i>< applet > </i> o la etiqueta <i>< object >.</i>
+         En el primer caso el archivo <i>.class</i> se declara en al atributo <i>code</i>, en el segundo se declara un elemento 
+         <i>param</i> donde sus atributos <i>name</i> será <i>code y value</i> será el nombre del applet. Cabe mencionar que <b>en el segundo caso en necesario declarar otros elementos 
+            param adicionales y en el elemnto object declarar algunos parámetros como <i>classid, codebase y type.</i></b> En ambos casos es necesario declarar el tamaño de la ventana
+            del applet con los parámetros <i>widht y height.</i>
+    </p>
+    <p>
+        La salida del programa será: Hola mundo!!
+    </p>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2 Formulario </title>
+</head>
+<body>
+
+    <form action="" method="">
+        
+            <label for="comenzar">Pulse para comenzar: </label>
+            <input type="submit" id="comenzar" value="comenzar">
+        <br><br>
+            <label for="pasajero">Número de pasajero frecuente:</label>
+            <input type="number" id="pasajero" minlength="4" maxlength="5">
+        <br><br>
+            <label>Nivel: Clasico</label><input type="radio" name="nivel" value="clasic" id="clasic">
+            <label>Oro</label><input type="radio" name="nivel" value="oro" id="oro">
+            <label>Platino</label><input type="radio" name="nivel" value="platin" id="platin">
+        <br><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+        <br><br>
+            <label for="date">Fecha de Nacimiento: </label>
+            <input type="date" id="date">
+        <br><br>
+            <label for="phone">Telefono: </label>
+            <input type="tel" id="phone" minlength="10" maxlength="10" placeholder="81-0000-0000">
+        <br><br>
+            <label for="date_hr">Fecha y hora de reservación del boleto: </label>
+            <input type="datetime-local" id="date_hr">
+        <br><br>
+            <label for="pas">Número de pasaporte:</label>
+            <input type="text" id="pas" placeholder="G-5569">
+        <br><br>
+            <label for="foto">Fotografria del pasajero:</label>
+            <input type="file" id="foto">
+        <br><br>
+            <label for="mes">Mes de vencimiento del pasaporte: </label>
+            <input type="month" id="mes">
+        <br><br>
+            <label for="salida">Salida del vuelo:</label>
+            <input type="datetime-local" id="salida">
+        <br><br>
+            <label for="hora">Hora de abordaje: </label>
+            <input type="time" id="hora">
+        <br><br>
+            <label for="cost">Costo del Boleto: </label>
+            <input type="number" id="cost">
+        <br><br>
+            <label for="peso">Peso del equipaje: </label>
+            <input type="range" id="peso">
+        <br><br>
+            <label for="color">Seleccione el color de la seleccion a la que pertenece su asiento:</label>
+            <input type="color">
+        
+    </form>
+    
+</body>
+</html>

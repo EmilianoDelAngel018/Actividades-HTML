@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Cuestionario de evauación de servicios</h1>
+    <section>
+        <fieldset>
+            <legend>Datos Generales</legend>
+            <div style="padding: 10px;">
+                <form action="" method="">
+                    <label for="clave">Clave de su área (comenzando con A):</label>
+                    <input type="text" id="clave" name="clave">
+                    <br><br>
+                    <label for="nombre">Nombre del técnico evaluado: </label>
+                    <input type="text" id="nombre" name="nombre">
+                    <br><br>
+                    <label for="service">Servicio a evaluar:</label>
+                    <select name="service" id="service">
+                        <option value="Resolucion">Resolucion de problemas frecuentes</option>
+                        <option value="Resolucion">Resolucion de problemas frecuentes</option>
+                    </select>
+                    <br><br>
+                    <label for="fecha">Fecha en que se proporcionó el servicio:</label>
+                    <input type="date" id="fecha" name="fecha">
+                </form>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Satisfacción: </legend>
+            <div style="padding: 10px;">
+                <form>
+                    <label for="satis">Satisfacción genereal con el servicio: </label>
+                    <select name="satis" id="satis">
+                        <option value="excelente">excelente</option>
+                        <option value="regular">regular</option>
+                    </select>
+                    <br><br>
+                    <label for="problema">Se problema se resolvió: </label>
+                    <select name="problema" id="problema">
+                        <option value="si">Si</option>
+                        <option value="no">no</option>
+                    </select>
+                    <br><br>
+                    <label for="oportunidad">Con que oportunidad se resolvió su problema: </label>
+                    <select name="problema" id="problema">
+                        <option value="demasiada">demasiada</option>
+                        <option value="poca">poca</option>
+                    </select>
+                    <br><br>
+                    <label for="coments">Comentarios adicionales:</label>
+                    <br>
+                    <textarea name="coments" id="coments" cols="100%" rows="10"></textarea>
+                </form>
+            </div>
+        </fieldset>
+    </section>
+    <div>
+        <input type="reset" value="Limpiar">
+        <input type="submit" value="Enviar">
+    </div>
+    
+</body>
+</html>
